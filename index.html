@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alex Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <div class="animated-bg"></div>
+
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">ALEX<span style="color: var(--accent)">.DEV</span></a>
+            <div class="d-flex align-items-center order-lg-last ms-lg-4">
+                <span id="theme-toggle" style="cursor:pointer; font-size: 1.2rem;">🌙</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold text-uppercase" style="letter-spacing: 1px; font-size: 0.85rem;">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section container">
+        <div class="row align-items-center min-vh-100 py-5">
+            <div class="col-lg-7 animate__animated animate__fadeInLeft">
+                <h6 class="text-uppercase fw-bold mb-3" style="color: var(--accent); letter-spacing: 4px;">Engineer & Developer</h6>
+                <h1 class="display-2 fw-bold mb-3" style="color: var(--text)">Alex <span style="font-style: italic;">Dev</span></h1>
+                <p class="lead mb-5">Computer Science Engineer specialized in building scalable backend systems and high-performance applications. Focused on clean architecture and robust performance.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#projects" class="btn btn-primary btn-lg px-4 shadow-sm">View Work</a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg px-4">Contact Me</a>
+                </div>
+            </div>
+            <div class="col-lg-5 animate__animated animate__zoomIn mt-5 mt-lg-0 text-center">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="img-fluid rounded-5 shadow-lg hero-img" alt="Alex Dev">
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold" style="color: var(--text)">Selected Projects</h2>
+                <div class="underline mx-auto mt-3"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card glass-card h-100 p-4 reveal-on-scroll">
+                        <div class="rounded-4 overflow-hidden mb-4">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" class="img-fluid project-img" alt="Project">
+                        </div>
+                        <h4 class="fw-bold">Enterprise Cloud Analytics</h4>
+                        <p class="text-muted">A high-performance dashboard for research data utilizing Spring Boot and Redis for real-time visualization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="display-6 fw-bold mb-4">Technical <span style="color: var(--accent)">Stack</span></h2>
+                    <p class="mb-4 opacity-75">I specialize in building robust digital products. Here are the core technologies I work with daily:</p>
+                    
+                    <div class="d-flex flex-wrap gap-2 animate__animated animate__fadeInUp">
+                        <div class="skill-capsule">React Native</div>
+                        <div class="skill-capsule">Spring Boot</div>
+                        <div class="skill-capsule">Java</div>
+                        <div class="skill-capsule">TypeScript</div>
+                        <div class="skill-capsule">Node.js</div>
+                        <div class="skill-capsule">Redis</div>
+                        <div class="skill-capsule">Docker</div>
+                        <div class="skill-capsule">Kubernetes</div>
+                        <div class="skill-capsule">Microservices</div>
+                        <div class="skill-capsule">PostgreSQL</div>
+                        <div class="skill-capsule">AWS</div>
+                        <div class="skill-capsule">Git</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="stat-box glass-card p-5 reveal-on-scroll">
+                        <h2 class="display-3 fw-bold mb-0" style="color: var(--text)">300+</h2>
+                        <p class="text-uppercase fw-bold opacity-50 mt-2" style="letter-spacing: 2px;">DSA Solved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 mb-5">
+        <div class="container">
+            <div class="contact-outer-card glass-card p-5 reveal-on-scroll">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <h2 class="display-5 fw-bold mb-4">Let's Connect</h2>
+                        <p class="mb-4">Reach out via the form or follow my work on social platforms.</p>
+                        
+                        <div class="d-flex gap-4 fs-2 mb-5">
+                            <a href="https://github.com" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:alexdev@gmail.com" class="social-link"><i class="bi bi-envelope-at-fill"></i></a>
+                        </div>
+
+                        <div class="d-flex flex-column gap-2 opacity-75">
+                            <span><i class="bi bi-geo-alt-fill me-2"></i> Rajasthan, India</span>
+                            <span><i class="bi bi-clock-fill me-2"></i> Available for collaboration</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="small fw-bold mb-1">Full Name</label>
+                                    <input type="text" class="form-control custom-input" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="small fw-bold mb-1">Email</label>
+                                    <input type="email" class="form-control custom-input" placeholder="Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="small fw-bold mb-1">Message</label>
+                                    <textarea class="form-control custom-input" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary w-100 py-3 fw-bold">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
